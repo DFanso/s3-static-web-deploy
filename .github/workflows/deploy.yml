@@ -9,6 +9,9 @@ on:
 jobs:
   deploy:
     name: Build & Deploy to AWS CloudFront
+    permissions:
+      id-token: write
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -18,6 +21,6 @@ jobs:
         with:
           aws-region: ${{ secrets.AWS_REGION}}
           role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID}}:role/Github_Action
-
+        
      
       
