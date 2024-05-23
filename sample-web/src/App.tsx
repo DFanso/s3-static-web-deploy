@@ -18,6 +18,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <h1>Hosted on AWS s3</h1>
+      <h1>CDN By AWS CloudFront</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
