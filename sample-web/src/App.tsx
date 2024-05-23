@@ -22,12 +22,9 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
       <p className="read-the-docs">
-      &copy DFanso 2024
+      @DFanso 2024
       </p>
     </>
   )
